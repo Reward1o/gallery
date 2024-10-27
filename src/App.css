@@ -1,0 +1,163 @@
+.image-page, .video-page, .home-page {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.pexels {
+    max-width: 100px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-card, .video-card {
+    margin: 20px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+    height: 90%;
+}
+
+.photo-card_photographer, .video-card_videogragher {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    width: 220px;
+    transition: color .5s ease;
+}
+
+.photo-card:hover, .video-card:hover {
+    scale: 1.1;
+    box-shadow: 0 2px 8px rgb(5, 182, 147);
+}
+
+.photo-card a:hover, .video-card a:hover {
+    color: rgb(5, 182, 147);
+}
+
+.photo-card img {
+    max-width: 230px;
+    height: auto;
+}
+
+h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255) 0%, rgba(32,32,32) 10%, rgba(0,0,0) 100%);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: #000 0 4px 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar ul li {
+    padding: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: cornsilk;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+.video-card img {
+    width: 230px;
+    height: 330px;
+    object-fit: cover;
+}
+.video-card {
+    text-align: center;
+}
+
+.more-video {
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(5, 182, 147);
+    color: white;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.more-video:hover {
+    scale: 1.1;
+}
+
+.closeButton {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    padding: 1px 8px;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.3s ease;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+
+.closeButton:hover {
+    color: rgb(5, 182, 147);
+    box-shadow: 0 0 8px rgb(5, 182, 147);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
