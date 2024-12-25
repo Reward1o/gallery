@@ -5,8 +5,8 @@ interface ModalProps {
    isModalOpen: boolean;
    closeModal: () => void;
    video: {
-         link: string;
-      }[];
+      link: string;
+   }[];
 
 }
 
@@ -19,7 +19,9 @@ const ModalVideo: FC<ModalProps> = ({isModalOpen, closeModal, video}) => {
          className='modal'
          overlayClassName='modal-overlay'
       >
-         <img className='pexels' style={{top: '25px', left: '25px'}} src="https://images.pexels.com/lib/api/pexels.png" alt="logotype"/>
+         <img className='pexels'
+              style={{top: '25px', left: '25px'}} src="https://images.pexels.com/lib/api/pexels.png"
+              alt="logotype"/>
          <video playsInline
                 src={video[1].link || video[0].link}
                 width='960px'
